@@ -25,6 +25,12 @@ public class Xpath_locator {
 		driver.findElement(By.xpath("//input[@id='password' and @class='mr-sm-2 form-control']")).sendKeys("999981");
 		
 		
+		
+		
+		
+		
+		
+		
 	}
 
 }
