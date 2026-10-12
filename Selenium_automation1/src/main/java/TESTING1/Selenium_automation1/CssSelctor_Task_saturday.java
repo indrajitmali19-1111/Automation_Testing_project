@@ -68,8 +68,7 @@ public class CssSelctor_Task_saturday {
 		
 		
 		//date pick 2
-		
-		driver.findElement(By.cssSelector("input[readonly='readonly']")).sendKeys("11/10/2026");
+		driver.findElement(By.cssSelector("input[readonly='readonly']")).sendKeys("11/11/2027");
 		
 	}
 
