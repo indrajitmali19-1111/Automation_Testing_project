@@ -5,11 +5,13 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Automation_demo_site_task {
 
 	public static void main(String[] args) {
 		FirefoxDriver driver= new FirefoxDriver();
+		driver.manage().window().maximize();
 		
 		driver.get("https://demo.automationtesting.in/Register.html");
 		
@@ -43,9 +45,18 @@ public class Automation_demo_site_task {
 		
 		
 		//Languages select
+		/* driver.findElement(By.xpath("//div[@style='display: block;']")).click();
+		Select selelan=new  Select(driver.findElement(By.xpath("//ul[@style='list-style:none;max-height: 230px;overflow: scroll;']")));
+		selelan.selectByValue("Hindi");
+		*/
 		
+		//Skills select
+		Select skill=new Select(driver.findElement(By.xpath("//select[@id='Skills' and @ng-init='Skill']")));
+		skill.selectByContainsVisibleText("Java");
 		
-		
+		//Country select
+		Select country=new Select(driver.findElement(By.xpath("//select[@id='countries' ]")));
+		country.selectByValue("India");
 		
 		//File upload
 		driver.findElement(By.id("imagesrc")).sendKeys("C:\\Users\\asus\\OneDrive\\Documents\\NOTES and Question Banks\\Advance Software testing\\Automation Testing\\Automation_Testing Notes.pdf");

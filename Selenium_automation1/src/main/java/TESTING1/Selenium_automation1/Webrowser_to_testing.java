@@ -10,7 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class Webrowser_to_testing {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver = new EdgeDriver();
 		//driver.switchTo().newWindow(WindowType.TAB);
@@ -20,17 +20,22 @@ public class Webrowser_to_testing {
 		//one attribute is rong
 		driver.findElement(By.xpath("//input[@id='firstName' or @placeholder='first']")).sendKeys("Atharva");
 		
-		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Kadam");
 		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[contains(@pattern,'^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$')]")).sendKeys("Athrva@123");
 		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@value='Male']")).click();
 		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Mobile Number')]")).sendKeys("418936466464");
 		
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@class='subjects-auto-complete__input']")).sendKeys("Java+Automation testing");
 		
+		Thread.sleep(1000);
 		List<WebElement> checkbox=driver.findElements(By.xpath("//input[@type='checkbox']"));
 		for(int i=0;i<checkbox.size();i++) {
 			checkbox.get(i).click();

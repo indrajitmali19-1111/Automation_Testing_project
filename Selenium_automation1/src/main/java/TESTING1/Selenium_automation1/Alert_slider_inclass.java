@@ -19,7 +19,7 @@ public class Alert_slider_inclass {
 		Actions action= new Actions(driver);
 		
 		action.dragAndDropBy(rightslider, -50, 0).build().perform();
-
+		
 	}
 
 }
