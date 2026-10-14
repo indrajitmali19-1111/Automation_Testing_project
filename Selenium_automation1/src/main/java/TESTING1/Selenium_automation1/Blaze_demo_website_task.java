@@ -56,7 +56,7 @@ public class Blaze_demo_website_task {
 		driver.findElement(By.cssSelector("input#zipCode[name='zipCode']")).sendKeys("415409");
 		Select card=new Select(driver.findElement(By.id("cardType")));
 		card.selectByContainsVisibleText("American Express");
-		driver.findElement(By.cssSelector("input[placeholder='Credit Card Number']")).sendKeys("1234 1234 1234");
+		driver.findElement(By.cssSelector("input[placeholder='Credit Card Number']")).sendKeys("1234588855565");
 		driver.findElement(By.id("creditCardMonth")).sendKeys("11");
 		driver.findElement(By.cssSelector("#creditCardYear")).sendKeys("2011");
 		driver.findElement(By.cssSelector("#nameOnCard")).sendKeys("Atharvasalunkhe");
