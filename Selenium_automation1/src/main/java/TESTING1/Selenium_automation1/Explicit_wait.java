@@ -33,6 +33,12 @@ public class Explicit_wait {
 		//Explicit wait apply for login button
 		WebElement loginbtn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
 		loginbtn.click();
+		
+		
+		
+		driver.findElement(By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")).click();
+		
+		
 	}
 
 }
