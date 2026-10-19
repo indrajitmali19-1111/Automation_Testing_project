@@ -14,13 +14,13 @@ public class New_annotations {
 	@Test
 	public void method2()
 	{
-		System.out.println("This is third method ");
+		System.out.println("This is Test ");
 		
 	}
 	
 	@AfterMethod
 	public void method3()
 	{
-		System.out.println("This is third method");
+		System.out.println("This is AfterMethod");
 	}
 }
