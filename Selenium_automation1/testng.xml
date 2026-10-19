@@ -4,7 +4,9 @@
   <test thread-count="5" name="Test">
   <parameter name="I" value="11"></parameter>
     <classes>
-      
+      <class name="TESTING1.Selenium_automation1.AppTest"/>
+      <class name="TESTING1.Selenium_automation1.All_Annotations"/>
+      <class name="TESTING1.Selenium_automation1.Test_Annotations"/>
       <class name="TESTING1.Selenium_automation1.Parameterize_method_annotation"/>
     </classes>
   </test> <!-- Test -->
