@@ -4,9 +4,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public interface Chrome_Browser {
 
-	static void chromebrowser() {
+	static void chromebrowser() throws InterruptedException {
 		ChromeDriver driver = new ChromeDriver();
-		
+		Thread.sleep(5000);
+		driver.close();
 	}
 	
 }
