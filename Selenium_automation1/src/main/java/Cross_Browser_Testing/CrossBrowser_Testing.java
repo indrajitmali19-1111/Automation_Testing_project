@@ -7,7 +7,6 @@ public class CrossBrowser_Testing implements Edge_Browser,FireFox_Browser,Chrome
 		
 		Edge_Browser.Edgebrowser();
 		Thread.sleep(5000);
-		
 		FireFox_Browser.Firefoxbroswer();
 		Thread.sleep(5000);
 		Chrome_Browser.chromebrowser();
