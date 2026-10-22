@@ -4,6 +4,9 @@ import org.testng.annotations.Test;
 
 public class Priority_TestNg {
 	
+	
+	//priority gives as per alphabetical order
+	
 	@Test
 	public void first()
 	{

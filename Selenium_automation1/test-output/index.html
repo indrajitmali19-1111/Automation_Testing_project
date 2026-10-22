@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\asus\AppData\Local\Temp\testng-eclipse-1822531476\testng-customsuite.xml</span>
+                    <span>C:\Users\asus\AppData\Local\Temp\testng-eclipse--1357852644\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,17 +103,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TESTING1.Selenium_automation1.Priority_TestNg" class="method navigator-link" hash-for-method="first">first</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Priority_in_TestNg.Fifth_table" class="method navigator-link" hash-for-method="RowOne">RowOne</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TESTING1.Selenium_automation1.Priority_TestNg" class="method navigator-link" hash-for-method="second">second</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Priority_in_TestNg.Fifth_table" class="method navigator-link" hash-for-method="last">last</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TESTING1.Selenium_automation1.Priority_TestNg" class="method navigator-link" hash-for-method="third">third</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Priority_in_TestNg.Fifth_table" class="method navigator-link" hash-for-method="second">second</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,14 +131,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TESTING1.Selenium_automation1.Priority_TestNg</span>
+              <span class="class-name">Priority_in_TestNg.Fifth_table</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="first">
-                  </a> <!-- first -->
-                  <span class="method-name">first</span>
+                  <a name="RowOne">
+                  </a> <!-- RowOne -->
+                  <span class="method-name">RowOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="last">
+                  </a> <!-- last -->
+                  <span class="method-name">last</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -148,19 +155,12 @@
                   <span class="method-name">second</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="third">
-                  </a> <!-- third -->
-                  <span class="method-name">third</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\asus\AppData\Local\Temp\testng-eclipse-1822531476\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\asus\AppData\Local\Temp\testng-eclipse--1357852644\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -169,7 +169,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TESTING1.Selenium_automation1.Priority_TestNg&quot;/&gt;
+      &lt;class name=&quot;Priority_in_TestNg.Fifth_table&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -211,22 +211,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'first')
-data.setCell(0, 2, 'TESTING1.Selenium_automation1.Priority_TestNg')
-data.setCell(0, 3, 12);
+data.setCell(0, 1, 'second')
+data.setCell(0, 2, 'Priority_in_TestNg.Fifth_table')
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'second')
-data.setCell(1, 2, 'TESTING1.Selenium_automation1.Priority_TestNg')
-data.setCell(1, 3, 5);
+data.setCell(1, 1, 'RowOne')
+data.setCell(1, 2, 'Priority_in_TestNg.Fifth_table')
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'third')
-data.setCell(2, 2, 'TESTING1.Selenium_automation1.Priority_TestNg')
-data.setCell(2, 3, 3);
+data.setCell(2, 1, 'last')
+data.setCell(2, 2, 'Priority_in_TestNg.Fifth_table')
+data.setCell(2, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 ms</span>
+              <span class="suite-total-time">Total running time: 12 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,18 +252,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TESTING1.Selenium_automation1.Priority_TestNg</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Priority_in_TestNg.Fifth_table</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">first</span>
+                <span class="method-name">second</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">second</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-name">last</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">third</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-name">RowOne</span>
+                <span class="method-start">18 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

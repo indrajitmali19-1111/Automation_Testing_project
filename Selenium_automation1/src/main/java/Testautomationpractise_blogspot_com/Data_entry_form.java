@@ -1,11 +1,15 @@
 package Testautomationpractise_blogspot_com;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -25,21 +29,24 @@ public class Data_entry_form {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
 		
+		Selectitem();
+		NewTab_Window();
+		brokenlink();
 		
+		ShadowDom();
 		FotterLink();
 		Uploadfiles();
-		//ShadowDom();
+		
 		Form();
-		brokenlink();
+		
 		laptoplink();
-		//Selectitem();
+		//
 		Slider();
 		DragDrop();
 		DoubleClick();
 		Search();
 		Dynamicbutton();
 		AlertPopup();
-		//NewTab_Window();
 		Hoverpoint();
 		
 		
@@ -131,22 +138,82 @@ public class Data_entry_form {
 	 }
 	 
 	 
-	 public static void NewTab_Window()
+	 public static void NewTab_Window() throws InterruptedException
 	 {
 		 //New tab
 		 WebElement newtab=driver.findElement(By.xpath("//button[@onclick='myFunction()']"));
 		 newtab.click();
-		 Actions act=new Actions(driver);
+		 //All window id are stores in the variable
 		 
-		 act.sendKeys(Keys.ALT).sendKeys(Keys.F4).build().perform();
+		 String Windowid=driver.getWindowHandle();
+		 Thread.sleep(4000);
+		 driver.switchTo().window(Windowid);
+		 
+		 Thread.sleep(3000);
+		 
+		 driver.findElement(By.id("PopUp")).click();
+		 Thread.sleep(5000);
+		 
+		 //Multiple window handle
+		 Set<String> mlinks=driver.getWindowHandles();
+		 
+		 //Conver link set to Arrylist
+		 List<String> mainwindo = new ArrayList(mlinks);
+	
+		 //store the id of window in string
+		 String mw=mainwindo.get(0);
+		 String cw=mainwindo.get(1);
+		 String cw2=mainwindo.get(2);
+		 
+		 //Switching the window and close the window
+		 driver.switchTo().window(cw);
+		 driver.close();
+		 driver.switchTo().window(mw);
 		 
 		 
-		 // New Window
-		 WebElement newwindow=driver.findElement(By.id("PopUp"));
-		 newwindow.click();
 		 
 		 
 		 
+	
+		 
+		 
+//		 
+//		 for(int i=0;i<mainwindo.size();i++)
+//		 {
+//			String mwindow=mainwindo.get(0);
+//			String childwindow=maine
+//			
+//			
+//			if(mwindow!=mainwindo.get(i))
+//			{
+//				mainwindo.get(i).
+//			}
+//			 
+//		 }
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+//		 driver.close();
+//		 driver.switchTo().window(Windowid);
+		 
+		 
+		 
+		 
+		 //By Multiple window handles
+//		 Set<String> windowIds=driver.getWindowHandles();
+//		 
+//		 List<String> windowlist=new ArrayList(windowIds);
+//		 
+//		String parentid=windowlist.get(0);
+//		String childid=windowlist.get(1); 
+//		 
+//		Thread.sleep(5000);
+//		driver.switchTo().window(parentid);
+//		 		 
 	 }
 	 
 	 
@@ -195,10 +262,20 @@ public class Data_entry_form {
 	 
 	 public static void Selectitem()
 	 {
-		 //WebElement item=driver.findElement(By.cssSelector("span[style='left: 15%;']"));
 		 
-		 Select item=new Select(driver.findElement(By.cssSelector("input[placeholder='Select an item']")));
-		 item.selectByContainsVisibleText("Item 11");
+		 WebElement select=driver.findElement(By.xpath("//div[@id='dropdown']/div[11]"));
+		 
+		 select.click();
+		 
+		 
+		 
+		 
+//		 WebElement items=driver.findElement(By.id("comboBox"));
+//		 
+//		 Select item=new Select(items);
+//		 item.selectByContainsVisibleText("Item 11");
+//		 
+//		 driver.findElement(By.cssSelector("input[placeholder='Select an item']"))
 	 }
 
 	 
@@ -215,30 +292,45 @@ public class Data_entry_form {
 	 
 	 public static void brokenlink() throws InterruptedException
 	 {
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=400']")).click();
-		 Thread.sleep(4000);
-		 driver.navigate().back();
 		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=401']")).click();
-		 driver.navigate().back();
+		 List<WebElement> links=driver.findElements(By.partialLinkText("Errorcode"));
 		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=403']")).click();
-		 driver.navigate().back();
+		 for(int i=0;i<links.size();i++)
+		 {
+			 links.get(i).click();
+			 Thread.sleep(1000);
+			 driver.navigate().back();
+			 Thread.sleep(2000);
+		 }
 		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=404']")).click();
-		 driver.navigate().back();
 		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=408']")).click();
-		 driver.navigate().back();
 		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=500']")).click();
-		 driver.navigate().back();
+		 //code is convert less
 		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=502']")).click();
-		 driver.navigate().back();
-		 
-		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=503']")).click();
-		 driver.navigate().back();
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=400']")).click();
+//		 Thread.sleep(4000);
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=401']")).click();
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=403']")).click();
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=404']")).click();
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=408']")).click();
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=500']")).click();
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=502']")).click();
+//		 driver.navigate().back();
+//		 
+//		 driver.findElement(By.xpath("//a[@href='http://www.deadlinkcity.com/error-page.asp?e=503']")).click();
+//		 driver.navigate().back();
 	 }
 	 
 	 public static void Form()
@@ -254,9 +346,16 @@ public class Data_entry_form {
 	 }
 	 
 	 
-	 public static void ShadowDom()
+	 public static void ShadowDom() throws InterruptedException
 	 {
-		 driver.findElement(By.xpath("//input[@type='text' and @css='1']")).sendKeys("This IS first");
+		 SearchContext shadow=driver.findElement(By.cssSelector("#shadow_host")).getShadowRoot();
+		 Thread.sleep(2000);
+		 //SearchContext shadow=shadow1.findElement(By.cssSelector("#nested_shadow_host")).getShadowRoot();
+		 Thread.sleep(2000);
+		 shadow.findElement(By.cssSelector("input[type='text']")).sendKeys("I handle the ShadowDom");
+		 System.out.println(shadow.toString());
+		 shadow.findElement(By.cssSelector("input[type='checkbox']")).click();
+		 
 	 }
 	 
 	 
