@@ -29,6 +29,8 @@ public class Data_entry_form {
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
 		
+		
+		Paginationtable();
 		Selectitem();
 		NewTab_Window();
 		brokenlink();
@@ -395,5 +397,26 @@ public class Data_entry_form {
 		 driver.navigate().back();
 		 Thread.sleep(3000);
 		 
+	 }
+	 
+	 
+	 
+	 
+	 
+	 public static void Paginationtable() throws InterruptedException
+	 {
+		 List<WebElement> numbers=driver.findElements(By.xpath("//ul[@id='pagination']/li/a"));
+		 List<WebElement> checkboxes=driver.findElements(By.xpath("//table[@id=\"productTable\"]/tbody/tr[*]/td[4]/input[@type='checkbox']"));
+		 
+		 
+		 for(int i=0;i<numbers.size();i++)
+		 {
+			 numbers.get(i).click();
+			 for(int j=0;j<checkboxes.size();j++)
+			 {
+				 checkboxes.get(j).click();
+			 }
+			 Thread.sleep(2000);
+		 }
 	 }
 }
