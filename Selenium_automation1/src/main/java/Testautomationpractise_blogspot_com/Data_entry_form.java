@@ -406,7 +406,7 @@ public class Data_entry_form {
 	 public static void Paginationtable() throws InterruptedException
 	 {
 		 List<WebElement> numbers=driver.findElements(By.xpath("//ul[@id='pagination']/li/a"));
-		 List<WebElement> checkboxes=driver.findElements(By.xpath("//table[@id=\"productTable\"]/tbody/tr[*]/td[4]/input[@type='checkbox']"));
+		 List<WebElement> checkboxes=driver.findElements(By.xpath("//table[@id=\"productTable\"]/tbody/tr/td/input[@type='checkbox']"));
 		 
 		 
 		 for(int i=0;i<numbers.size();i++)
