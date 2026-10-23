@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-22T23:05:16 IST" name="Default suite" finished-at="2026-10-22T23:05:21 IST" duration-ms="4842">
+  <suite started-at="2026-10-23T15:12:52 IST" name="Multiple_test" finished-at="2026-10-23T15:13:11 IST" duration-ms="19258">
     <groups>
     </groups>
-    <test started-at="2026-10-22T23:05:16 IST" name="Default test" finished-at="2026-10-22T23:05:21 IST" duration-ms="4842">
-      <class name="Practice_1_dataprovider">
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Practice_1_dataprovider@3590fc5b]" started-at="2026-10-22T23:05:16 IST" name="f" data-provider="login" finished-at="2026-10-22T23:05:19 IST" duration-ms="2781" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-10-23T15:12:52 IST" name="Test2" finished-at="2026-10-23T15:13:02 IST" duration-ms="10201">
+      <class name="Parallel_Testing.Multiple_Browser_open">
+        <test-method signature="Edgebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@3d285d7e]" started-at="2026-10-23T15:12:52 IST" name="Edgebrowser" finished-at="2026-10-23T15:12:54 IST" duration-ms="2867" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:Practice_1_dataprovider@3590fc5b]" started-at="2026-10-22T23:05:19 IST" name="f" data-provider="login" finished-at="2026-10-22T23:05:21 IST" duration-ms="2000" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Edgebrowser -->
+        <test-method signature="FirefoxBrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@3d285d7e]" started-at="2026-10-23T15:12:54 IST" name="FirefoxBrowser" finished-at="2026-10-23T15:13:00 IST" duration-ms="5456" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- Practice_1_dataprovider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- FirefoxBrowser -->
+        <test-method signature="chromebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@3d285d7e]" started-at="2026-10-23T15:13:00 IST" name="chromebrowser" finished-at="2026-10-23T15:13:02 IST" duration-ms="1831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromebrowser -->
+      </class> <!-- Parallel_Testing.Multiple_Browser_open -->
+    </test> <!-- Test2 -->
+    <test started-at="2026-10-23T15:12:52 IST" name="Test" finished-at="2026-10-23T15:13:05 IST" duration-ms="13677">
+      <class name="Parallel_Testing.Multiple_Browser_open">
+        <test-method signature="Edgebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@1aafa419]" started-at="2026-10-23T15:12:52 IST" name="Edgebrowser" finished-at="2026-10-23T15:12:54 IST" duration-ms="2867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Edgebrowser -->
+        <test-method signature="FirefoxBrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@1aafa419]" started-at="2026-10-23T15:12:54 IST" name="FirefoxBrowser" finished-at="2026-10-23T15:13:03 IST" duration-ms="8455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirefoxBrowser -->
+        <test-method signature="chromebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@1aafa419]" started-at="2026-10-23T15:13:03 IST" name="chromebrowser" finished-at="2026-10-23T15:13:05 IST" duration-ms="2313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromebrowser -->
+      </class> <!-- Parallel_Testing.Multiple_Browser_open -->
+    </test> <!-- Test -->
+    <test started-at="2026-10-23T15:13:02 IST" name="Test3" finished-at="2026-10-23T15:13:11 IST" duration-ms="8944">
+      <class name="Parallel_Testing.Multiple_Browser_open">
+        <test-method signature="Edgebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@2cd76f31]" started-at="2026-10-23T15:13:02 IST" name="Edgebrowser" finished-at="2026-10-23T15:13:04 IST" duration-ms="1935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Edgebrowser -->
+        <test-method signature="FirefoxBrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@2cd76f31]" started-at="2026-10-23T15:13:04 IST" name="FirefoxBrowser" finished-at="2026-10-23T15:13:09 IST" duration-ms="5346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirefoxBrowser -->
+        <test-method signature="chromebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@2cd76f31]" started-at="2026-10-23T15:13:09 IST" name="chromebrowser" finished-at="2026-10-23T15:13:11 IST" duration-ms="1652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromebrowser -->
+      </class> <!-- Parallel_Testing.Multiple_Browser_open -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Multiple_test -->
 </testng-results>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Multiple_class">
+  <test thread-count="5" name="Parallel_class_Test" parallel="classes">
+    <classes>
+      <class name="Parallel_Testing.One_class"/>
+      <class name="Parallel_Testing.Third_class"/>
+      <class name="Parallel_Testing.Second_class"/>
+      
+    </classes>
+  </test> <!-- Parallel_class_Test -->
+</suite> <!-- Multiple_class -->
