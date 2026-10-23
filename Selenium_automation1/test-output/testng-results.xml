@@ -1,57 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-23T15:12:52 IST" name="Multiple_test" finished-at="2026-10-23T15:13:11 IST" duration-ms="19258">
+  <suite started-at="2026-10-23T15:52:35 IST" name="Default suite" finished-at="2026-10-23T15:52:35 IST" duration-ms="64">
     <groups>
     </groups>
-    <test started-at="2026-10-23T15:12:52 IST" name="Test2" finished-at="2026-10-23T15:13:02 IST" duration-ms="10201">
-      <class name="Parallel_Testing.Multiple_Browser_open">
-        <test-method signature="Edgebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@3d285d7e]" started-at="2026-10-23T15:12:52 IST" name="Edgebrowser" finished-at="2026-10-23T15:12:54 IST" duration-ms="2867" status="PASS">
+    <test started-at="2026-10-23T15:52:35 IST" name="Default test" finished-at="2026-10-23T15:52:35 IST" duration-ms="64">
+      <class name="DependencyMethods.Method_dependent_practise">
+        <test-method signature="loginHrm()[pri:0, instance:DependencyMethods.Method_dependent_practise@47eaca72]" started-at="2026-10-23T15:52:35 IST" name="loginHrm" finished-at="2026-10-23T15:52:35 IST" duration-ms="9" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+Syntax error, insert ";" to complete Statement
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+Syntax error, insert ";" to complete Statement
+
+at DependencyMethods.Method_dependent_practise.loginHrm(Method_dependent_practise.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Edgebrowser -->
-        <test-method signature="FirefoxBrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@3d285d7e]" started-at="2026-10-23T15:12:54 IST" name="FirefoxBrowser" finished-at="2026-10-23T15:13:00 IST" duration-ms="5456" status="PASS">
+        </test-method> <!-- loginHrm -->
+        <test-method signature="profile()[pri:0, instance:DependencyMethods.Method_dependent_practise@47eaca72]" started-at="2026-10-23T15:52:35 IST" name="profile" finished-at="2026-10-23T15:52:35 IST" depends-on-methods="DependencyMethods.Method_dependent_practise.loginHrm" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependencyMethods.Method_dependent_practise.profile() on instance DependencyMethods.Method_dependent_practise@47eaca72 depends on not successfully finished methods 
+[DependencyMethods.Method_dependent_practise.loginHrm() on instance DependencyMethods.Method_dependent_practise@47eaca72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependencyMethods.Method_dependent_practise.profile() on instance DependencyMethods.Method_dependent_practise@47eaca72 depends on not successfully finished methods 
+[DependencyMethods.Method_dependent_practise.loginHrm() on instance DependencyMethods.Method_dependent_practise@47eaca72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FirefoxBrowser -->
-        <test-method signature="chromebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@3d285d7e]" started-at="2026-10-23T15:13:00 IST" name="chromebrowser" finished-at="2026-10-23T15:13:02 IST" duration-ms="1831" status="PASS">
+        </test-method> <!-- profile -->
+        <test-method signature="logout()[pri:0, instance:DependencyMethods.Method_dependent_practise@47eaca72]" started-at="2026-10-23T15:52:35 IST" name="logout" finished-at="2026-10-23T15:52:35 IST" depends-on-methods="DependencyMethods.Method_dependent_practise.profile, DependencyMethods.Method_dependent_practise.loginHrm" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependencyMethods.Method_dependent_practise.logout() on instance DependencyMethods.Method_dependent_practise@47eaca72 depends on not successfully finished methods 
+[DependencyMethods.Method_dependent_practise.profile() on instance DependencyMethods.Method_dependent_practise@47eaca72
+DependencyMethods.Method_dependent_practise.loginHrm() on instance DependencyMethods.Method_dependent_practise@47eaca72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependencyMethods.Method_dependent_practise.logout() on instance DependencyMethods.Method_dependent_practise@47eaca72 depends on not successfully finished methods 
+[DependencyMethods.Method_dependent_practise.profile() on instance DependencyMethods.Method_dependent_practise@47eaca72
+DependencyMethods.Method_dependent_practise.loginHrm() on instance DependencyMethods.Method_dependent_practise@47eaca72]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chromebrowser -->
-      </class> <!-- Parallel_Testing.Multiple_Browser_open -->
-    </test> <!-- Test2 -->
-    <test started-at="2026-10-23T15:12:52 IST" name="Test" finished-at="2026-10-23T15:13:05 IST" duration-ms="13677">
-      <class name="Parallel_Testing.Multiple_Browser_open">
-        <test-method signature="Edgebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@1aafa419]" started-at="2026-10-23T15:12:52 IST" name="Edgebrowser" finished-at="2026-10-23T15:12:54 IST" duration-ms="2867" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Edgebrowser -->
-        <test-method signature="FirefoxBrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@1aafa419]" started-at="2026-10-23T15:12:54 IST" name="FirefoxBrowser" finished-at="2026-10-23T15:13:03 IST" duration-ms="8455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirefoxBrowser -->
-        <test-method signature="chromebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@1aafa419]" started-at="2026-10-23T15:13:03 IST" name="chromebrowser" finished-at="2026-10-23T15:13:05 IST" duration-ms="2313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chromebrowser -->
-      </class> <!-- Parallel_Testing.Multiple_Browser_open -->
-    </test> <!-- Test -->
-    <test started-at="2026-10-23T15:13:02 IST" name="Test3" finished-at="2026-10-23T15:13:11 IST" duration-ms="8944">
-      <class name="Parallel_Testing.Multiple_Browser_open">
-        <test-method signature="Edgebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@2cd76f31]" started-at="2026-10-23T15:13:02 IST" name="Edgebrowser" finished-at="2026-10-23T15:13:04 IST" duration-ms="1935" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Edgebrowser -->
-        <test-method signature="FirefoxBrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@2cd76f31]" started-at="2026-10-23T15:13:04 IST" name="FirefoxBrowser" finished-at="2026-10-23T15:13:09 IST" duration-ms="5346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirefoxBrowser -->
-        <test-method signature="chromebrowser()[pri:0, instance:Parallel_Testing.Multiple_Browser_open@2cd76f31]" started-at="2026-10-23T15:13:09 IST" name="chromebrowser" finished-at="2026-10-23T15:13:11 IST" duration-ms="1652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chromebrowser -->
-      </class> <!-- Parallel_Testing.Multiple_Browser_open -->
-    </test> <!-- Test3 -->
-  </suite> <!-- Multiple_test -->
+        </test-method> <!-- logout -->
+      </class> <!-- DependencyMethods.Method_dependent_practise -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

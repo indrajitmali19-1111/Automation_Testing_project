@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TESTING1.Selenium_automation1.Sauce_loginTest">
+      <class name="DependencyMethods.Method_dependent_practise">
         <methods>
-          <include name="error_user"/>
-          <include name="locked_out_user"/>
-          <include name="visualuser"/>
-          <include name="performance_glitch_user"/>
-          <include name="problem_user"/>
+          <include name="logout"/>
+          <include name="profile"/>
+          <include name="loginHrm"/>
         </methods>
-      </class> <!-- TESTING1.Selenium_automation1.Sauce_loginTest -->
+      </class> <!-- DependencyMethods.Method_dependent_practise -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
