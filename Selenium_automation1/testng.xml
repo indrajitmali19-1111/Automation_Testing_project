@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
   <parameter name="I" value="11"></parameter>
     <classes>
-      <class name="TESTING1.Selenium_automation1.AppTest"/>
-      <class name="TESTING1.Selenium_automation1.All_Annotations"/>
+      <class name="TESTING1.Selenium_automation1.First_testNg_script"/>
+      <class name="TESTING1.Selenium_automation1.New_annotations"/>
       <class name="TESTING1.Selenium_automation1.Test_Annotations"/>
       <class name="TESTING1.Selenium_automation1.Parameterize_method_annotation"/>
     </classes>

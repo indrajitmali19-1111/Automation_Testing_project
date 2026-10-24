@@ -10,6 +10,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 public class Method_dependent_practise {
+	
+	
+	
+	
+	//This is make a fail test login test case because see the how to work depends on method
 
 	public ChromeDriver driver;
 	
@@ -46,5 +51,7 @@ public class Method_dependent_practise {
 	{
 		System.out.println("this is Depends on profile,login method");
 	}
+	
+	
 	
 }

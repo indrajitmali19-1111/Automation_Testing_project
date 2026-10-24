@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DependencyMethods.Method_dependent_practise">
+      <class name="External_File_Reader">
         <methods>
-          <include name="logout"/>
-          <include name="profile"/>
-          <include name="loginHrm"/>
+          <include name="fielreadertest"/>
         </methods>
-      </class> <!-- DependencyMethods.Method_dependent_practise -->
+      </class> <!-- External_File_Reader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
