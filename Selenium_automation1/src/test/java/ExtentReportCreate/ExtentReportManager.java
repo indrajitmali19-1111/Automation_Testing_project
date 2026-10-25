@@ -41,7 +41,7 @@ public class ExtentReportManager implements ITestListener
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		test= extent.createTest(result.getName());  //xreate a new entry in the report
+		test= extent.createTest(result.getName());  //create a new entry in the report
 		test.log(Status.PASS, "Test case PASSED IS:" + result.getName());  //update status p/f/s
 	}
 

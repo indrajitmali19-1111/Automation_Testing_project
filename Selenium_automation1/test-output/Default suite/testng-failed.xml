@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ListenersPractise.Practice_Listener">
+      <class name="ExtentReportCreate.OrangeHrm_Login">
         <methods>
-          <include name="testcasetwo"/>
-          <include name="testcasethree"/>
-          <include name="testcaseone"/>
+          <include name="testHomePageTitle"/>
+          <include name="setup"/>
+          <include name="testAppurl"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- ListenersPractise.Practice_Listener -->
+      </class> <!-- ExtentReportCreate.OrangeHrm_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
