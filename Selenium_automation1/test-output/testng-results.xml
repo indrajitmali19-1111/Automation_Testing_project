@@ -1,30 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-25T14:48:36 IST" name="Grouping Testing" finished-at="2026-10-25T14:48:36 IST" duration-ms="82">
+  <suite started-at="2026-10-25T18:38:46 IST" name="Default suite" finished-at="2026-10-25T18:38:46 IST" duration-ms="74">
     <groups>
-      <group name="Sanity">
-        <method signature="Login_Test.TwitterLogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" name="TwitterLogin" class="Grouping_Test.Login_Test"/>
-        <method signature="Login_Test.facebooklogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" name="facebooklogin" class="Grouping_Test.Login_Test"/>
-        <method signature="Login_Test.instagramlogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" name="instagramlogin" class="Grouping_Test.Login_Test"/>
-      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2026-10-25T14:48:36 IST" name="Test" finished-at="2026-10-25T14:48:36 IST" duration-ms="82">
-      <class name="Grouping_Test.Login_Test">
-        <test-method signature="TwitterLogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:48:36 IST" name="TwitterLogin" finished-at="2026-10-25T14:48:36 IST" duration-ms="11" status="PASS">
+    <test started-at="2026-10-25T18:38:46 IST" name="Default test" finished-at="2026-10-25T18:38:46 IST" duration-ms="74">
+      <class name="ListenersPractise.Practice_Listener">
+        <test-method signature="testcaseone()[pri:0, instance:ListenersPractise.Practice_Listener@3270d194]" started-at="2026-10-25T18:38:46 IST" name="testcaseone" finished-at="2026-10-25T18:38:46 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TwitterLogin -->
-        <test-method signature="facebooklogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:48:36 IST" name="facebooklogin" finished-at="2026-10-25T14:48:36 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- testcaseone -->
+        <test-method signature="testcasetwo()[pri:1, instance:ListenersPractise.Practice_Listener@3270d194]" started-at="2026-10-25T18:38:46 IST" name="testcasetwo" finished-at="2026-10-25T18:38:46 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at ListenersPractise.Practice_Listener.testcasetwo(Practice_Listener.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebooklogin -->
-        <test-method signature="instagramlogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:48:36 IST" name="instagramlogin" finished-at="2026-10-25T14:48:36 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- testcasetwo -->
+        <test-method signature="testcasethree()[pri:2, instance:ListenersPractise.Practice_Listener@3270d194]" started-at="2026-10-25T18:38:46 IST" name="testcasethree" finished-at="2026-10-25T18:38:46 IST" depends-on-methods="ListenersPractise.Practice_Listener.testcaseone, ListenersPractise.Practice_Listener.testcasetwo" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ListenersPractise.Practice_Listener.testcasethree() on instance ListenersPractise.Practice_Listener@3270d194 depends on not successfully finished methods 
+[ListenersPractise.Practice_Listener.testcaseone() on instance ListenersPractise.Practice_Listener@3270d194
+ListenersPractise.Practice_Listener.testcasetwo() on instance ListenersPractise.Practice_Listener@3270d194]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ListenersPractise.Practice_Listener.testcasethree() on instance ListenersPractise.Practice_Listener@3270d194 depends on not successfully finished methods 
+[ListenersPractise.Practice_Listener.testcaseone() on instance ListenersPractise.Practice_Listener@3270d194
+ListenersPractise.Practice_Listener.testcasetwo() on instance ListenersPractise.Practice_Listener@3270d194]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instagramlogin -->
-      </class> <!-- Grouping_Test.Login_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Grouping Testing -->
+        </test-method> <!-- testcasethree -->
+      </class> <!-- ListenersPractise.Practice_Listener -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

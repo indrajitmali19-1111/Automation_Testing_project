@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="External_File_Reader">
+      <class name="ListenersPractise.Practice_Listener">
         <methods>
-          <include name="fielreadertest"/>
+          <include name="testcasetwo"/>
+          <include name="testcasethree"/>
+          <include name="testcaseone"/>
         </methods>
-      </class> <!-- External_File_Reader -->
+      </class> <!-- ListenersPractise.Practice_Listener -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
