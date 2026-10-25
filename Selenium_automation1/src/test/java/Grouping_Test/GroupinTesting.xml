@@ -5,6 +5,7 @@
   <groups>
   	<run>
   	<include name="Sanity"></include>
+  	<exclude name="regression"></exclude>
   	
   	</run>
   
