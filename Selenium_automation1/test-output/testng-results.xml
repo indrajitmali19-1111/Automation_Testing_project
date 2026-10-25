@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
+<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-25T14:47:33 IST" name="Grouping Testing" finished-at="2026-10-25T14:47:33 IST" duration-ms="100">
+  <suite started-at="2026-10-25T14:48:36 IST" name="Grouping Testing" finished-at="2026-10-25T14:48:36 IST" duration-ms="82">
     <groups>
       <group name="Sanity">
         <method signature="Login_Test.TwitterLogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" name="TwitterLogin" class="Grouping_Test.Login_Test"/>
         <method signature="Login_Test.facebooklogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" name="facebooklogin" class="Grouping_Test.Login_Test"/>
         <method signature="Login_Test.instagramlogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" name="instagramlogin" class="Grouping_Test.Login_Test"/>
-        <method signature="Payment_Test.Twitterpayment()[pri:0, instance:Grouping_Test.Payment_Test@3590fc5b]" name="Twitterpayment" class="Grouping_Test.Payment_Test"/>
-        <method signature="Payment_Test.facebookpayment()[pri:0, instance:Grouping_Test.Payment_Test@3590fc5b]" name="facebookpayment" class="Grouping_Test.Payment_Test"/>
       </group> <!-- Sanity -->
-      <group name="regression">
-        <method signature="Payment_Test.Twitterpayment()[pri:0, instance:Grouping_Test.Payment_Test@3590fc5b]" name="Twitterpayment" class="Grouping_Test.Payment_Test"/>
-        <method signature="Payment_Test.facebookpayment()[pri:0, instance:Grouping_Test.Payment_Test@3590fc5b]" name="facebookpayment" class="Grouping_Test.Payment_Test"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-10-25T14:47:33 IST" name="Test" finished-at="2026-10-25T14:47:33 IST" duration-ms="100">
-      <class name="Grouping_Test.Payment_Test">
-        <test-method signature="Twitterpayment()[pri:0, instance:Grouping_Test.Payment_Test@3590fc5b]" started-at="2026-10-25T14:47:33 IST" name="Twitterpayment" finished-at="2026-10-25T14:47:33 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Twitterpayment -->
-        <test-method signature="facebookpayment()[pri:0, instance:Grouping_Test.Payment_Test@3590fc5b]" started-at="2026-10-25T14:47:33 IST" name="facebookpayment" finished-at="2026-10-25T14:47:33 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- facebookpayment -->
-      </class> <!-- Grouping_Test.Payment_Test -->
+    <test started-at="2026-10-25T14:48:36 IST" name="Test" finished-at="2026-10-25T14:48:36 IST" duration-ms="82">
       <class name="Grouping_Test.Login_Test">
-        <test-method signature="TwitterLogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:47:33 IST" name="TwitterLogin" finished-at="2026-10-25T14:47:33 IST" duration-ms="12" status="PASS">
+        <test-method signature="TwitterLogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:48:36 IST" name="TwitterLogin" finished-at="2026-10-25T14:48:36 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TwitterLogin -->
-        <test-method signature="facebooklogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:47:33 IST" name="facebooklogin" finished-at="2026-10-25T14:47:33 IST" duration-ms="3" status="PASS">
+        <test-method signature="facebooklogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:48:36 IST" name="facebooklogin" finished-at="2026-10-25T14:48:36 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- facebooklogin -->
-        <test-method signature="instagramlogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:47:33 IST" name="instagramlogin" finished-at="2026-10-25T14:47:33 IST" duration-ms="2" status="PASS">
+        <test-method signature="instagramlogin()[pri:0, instance:Grouping_Test.Login_Test@4802796d]" started-at="2026-10-25T14:48:36 IST" name="instagramlogin" finished-at="2026-10-25T14:48:36 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- instagramlogin -->
