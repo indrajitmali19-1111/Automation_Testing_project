@@ -406,17 +406,24 @@ public class Data_entry_form {
 	 public static void Paginationtable() throws InterruptedException
 	 {
 		 List<WebElement> numbers=driver.findElements(By.xpath("//ul[@id='pagination']/li/a"));
-		 List<WebElement> checkboxes=driver.findElements(By.xpath("//table[@id=\"productTable\"]/tbody/tr/td/input[@type='checkbox']"));
+		 List<WebElement> checkboxes=driver.findElements(By.xpath("//table[@id=\'productTable\']/tbody/tr/td/input[@type='checkbox']"));
 		 
+		 checkboxes.get(0).click();
 		 
 		 for(int i=0;i<numbers.size();i++)
 		 {
 			 numbers.get(i).click();
-			 for(int j=0;j<checkboxes.size();j++)
+			
+			 checkboxes.get(i).click();
+			 Thread.sleep(5000);
+			
+			 
+			/* for(int j=0;j<checkboxes.size();j++)
 			 {
 				 checkboxes.get(j).click();
 			 }
 			 Thread.sleep(2000);
+			*/
 		 }
 	 }
 }
