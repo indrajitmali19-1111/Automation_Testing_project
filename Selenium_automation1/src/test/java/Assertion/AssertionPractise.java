@@ -11,8 +11,7 @@ public class AssertionPractise {
 	public void Assertionpract()
 	{
 		
-		
-		
+
 		System.out.println("This is i make Fail test case");
 		
 		//Assertion is used
