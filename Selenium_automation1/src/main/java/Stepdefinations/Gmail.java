@@ -17,7 +17,7 @@ public class Gmail {
 	public void teststeps()
 	{
 		
-		System.out.println("Email:rudra11@gmail.com");
+		System.out.println("Email:rudra11@gmail.com & Password:rudra1111");
 	}
 	
 	
