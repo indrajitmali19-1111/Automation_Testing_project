@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExtentReportCreate.OrangeHrm_Login">
+      <class name="Assertion.AssertMethodTest">
         <methods>
-          <include name="testHomePageTitle"/>
-          <include name="setup"/>
-          <include name="testAppurl"/>
-          <include name="tearDown"/>
+          <include name="assertnotequal"/>
+          <include name="assertequal"/>
+          <include name="fail"/>
         </methods>
-      </class> <!-- ExtentReportCreate.OrangeHrm_Login -->
+      </class> <!-- Assertion.AssertMethodTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
