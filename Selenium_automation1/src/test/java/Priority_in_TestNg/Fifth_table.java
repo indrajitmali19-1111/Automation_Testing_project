@@ -21,10 +21,6 @@ public class Fifth_table {
 		System.out.println("The no priority");
 	}
 	
-	@Test
-	public void secondlast()
-	{
-		System.out.println("Hello");
-	}
+
 
 }
